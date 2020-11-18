@@ -54,8 +54,8 @@ class Game {
 
     if (won) return true;
 
-    won = true;
     for (let i = 0; i < this.#size; i++) {
+      won = true;
       for (let j = 0; j < this.#size; j++) {
         if (this.#state[j][i] !== sign) {
           won = false;
